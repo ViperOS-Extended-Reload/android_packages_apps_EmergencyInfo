@@ -40,6 +40,10 @@ LOCAL_RESOURCE_DIR += $(LOCAL_PATH)/res \
     $(support_library_root_dir)/design/res
     include frameworks/base/packages/SettingsLib/common.mk
 
+# Viper Color Engine
+$(warning *** Including Viper Color Engine ***)
+LOCAL_RESOURCE_DIR += vendor/viper/colorengine/$(LOCAL_PATH)/res
+
 LOCAL_AAPT_FLAGS := --auto-add-overlay \
     --extra-packages android.support.v7.preference \
 	--extra-packages android.support.v14.preference \
